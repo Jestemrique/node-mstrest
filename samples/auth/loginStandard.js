@@ -1,14 +1,14 @@
 const mstr = require('../../lib/mstr.js');
 
 (async () => {
-  const baseUrl = 'http://10.23.3.162:8080/MicrostrategyLibrary/api';
+  const baseUrl = 'http://10.23.3.162:8080/MicroStrategyLibrary/api';
   const mstrApi = new mstr.REST({
     baseUrl: baseUrl
   });
 
   const loginRequest = {
-      username: 'Administrator',
-      password: '',
+      username: 'admin',
+      password: 'admin',
       loginMode: 1
   };
 
