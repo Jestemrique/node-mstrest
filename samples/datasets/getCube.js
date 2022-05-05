@@ -18,7 +18,8 @@ const mstr = require('../../lib/mstr.js');
   const DatasetsAPI = mstrApi.datasets;
 
   try {
-      const objectId = '5F399A3DA18A4D378F25B2AFF6D48B0F';
+      //const objectId = '5F399A3DA18A4D378F25B2AFF6D48B0F';
+      const objectId = '3CBEDD1F42606069B18ECEA359D8C25D';
       const cubeDefinition = await DatasetsAPI.getDatasetDefintion(objectId);
       console.log('res: ', JSON.stringify(cubeDefinition, null, 2));
 
