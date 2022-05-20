@@ -15,12 +15,11 @@ const mstr = require('../../lib/mstr');
   //MicroStrategy Tutorial
   const projectId = 'B19DEDCC11D4E0EFC000EB9495D0F44F';
   mstrApi.setProjectId(projectId);
-  const fields = 'id, element';
+  const fields = 'id,element';
   const outputFlag = 'DEFAULT';
   const libraryAPI = mstrApi.library;
   const libraryResult = await libraryAPI.getLibrary(outputFlag, fields);
   console.log(JSON.stringify(libraryResult, null, 2));
-  console.log('Finished shwoing Library');
   console.log(
     'Finished showing Library: ',
     JSON.stringify(libraryResult, null, 2)
